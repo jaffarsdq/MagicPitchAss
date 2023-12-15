@@ -35,7 +35,6 @@ const scaleVariants = {
 const scalePhone = {
   whileInView: {
     y: [300, 0],
-    skewY: [6, 0],
     rotateX: [90, 0],
     opacity: [0, 0.5, 0.7, 1],
     transition: {
