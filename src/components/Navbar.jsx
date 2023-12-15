@@ -14,10 +14,23 @@ function Navbar() {
           <button className='flex hover:bg-slate-100 rounded-full p-1 px-3  transition-all duration-200'>
             Product
           </button>
-          <button className='flex bg-slate-50/50 hover:bg-slate-100 rounded-full p-1 px-3 group transition-all duration-200'>
-            Compare
-            <RiArrowDropDownLine className='text-2xl mt-[1px] group-hover:-rotate-180 duration-200 transition-all' />
-          </button>
+          <div className='relative group'>
+            <button className='flex bg-slate-50/50 hover:bg-slate-100 rounded-full p-1 px-3 group transition-all duration-200'>
+              Compare
+              <RiArrowDropDownLine className='text-2xl mt-[1px] group-hover:-rotate-180 duration-200 transition-all' />
+            </button>
+            <div className='h-[15rem] w-[40rem] bg-white absolute top-8 mt-1 rounded-xl border-[0.2px] border-black/10 hidden group-hover:block z-50 cursor-pointer p-4'>
+              {/* Your modal content goes here */}
+              <h6>Modal list</h6>
+              <ul className='mt-3 text-sm font-normal flex flex-col gap-3'>
+                <li>Home</li>
+                <li>Product</li>
+                <li>About</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
           <button className='flex hover:bg-slate-100 rounded-full p-1 px-3 transition-all duration-200'>
             Pricing
           </button>

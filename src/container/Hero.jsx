@@ -125,9 +125,9 @@ function Hero() {
                 whileInView={scalePhone.whileInView}
                 src={heroPhone}
                 alt='Your Image'
-                className='h-[98%] absolute  z-20 w-full'
+                className='h-[98%] absolute  z-10 w-full'
               />
-              <div className='absolute bottom-0 right-2 bg-gradient-to-b from-transparent to-white z-50 h-1/4 w-full'></div>
+              <div className='absolute bottom-0 right-2 bg-gradient-to-b from-transparent to-white z-30 h-1/4 w-full'></div>
             </div>
           </div>
         </div>
